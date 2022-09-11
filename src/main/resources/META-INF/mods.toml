@@ -1,0 +1,24 @@
+modLoader="javafml"
+loaderVersion="[41,)"
+license="MIT"
+
+[[mods]]
+modId="shinyhorses"
+version="1.0"
+displayName="Shiny Horses Forge - Enchantable Horse Armor"
+credits="Credit goes to tfarecnim for the original mod and Dragonostic for the Fabric version."
+displayURL="https://www.curseforge.com/minecraft/mc-mods/anvil-never-too-expensive"
+authors="Kuraion"
+logoFile="logo.png"
+description='''Enchant horse armor and gallop over the freezing ocean!'''
+
+[[dependencies.ante]]
+    modId="minecraft"
+    mandatory=true
+    versionRange="[1.19,]"
+    ordering="NONE"
+    side="BOTH"
+
+
+
+

@@ -1,0 +1,19 @@
+{
+  "required": true,
+  "package": "com.kuraion.shinyhorses.mixin",
+  "compatibilityLevel": "JAVA_8",
+  "refmap": "shinyhorses.refmap.json",
+  "mixins": [
+    "ItemMixin",
+    "EnchantmentHelperMixin",
+    "EnchantmentCategoryMixin",
+    "ItemMixin"
+  ],
+  "client": [
+    "HorseArmorLayerMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
