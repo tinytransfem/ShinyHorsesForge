@@ -11,6 +11,7 @@ import net.minecraft.world.entity.animal.horse.Horse;
 import net.minecraft.world.item.HorseArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
+import net.minecraft.world.item.enchantment.EnchantmentHelper;
 import net.minecraftforge.fml.common.Mod;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 
@@ -38,7 +39,7 @@ public class ShinyHorsesMod {
 		if (entityIn instanceof Horse) {
 			ItemStack armor = ((Horse) entityIn).getArmor();
 			if (armor.getItem() instanceof HorseArmorItem) {
-				int level = ((HorseArmorItem) armor.getItem()).getEnchantmentLevel(armor, enchantmentIn);
+				int level = EnchantmentHelper.getItemEnchantmentLevel(enchantmentIn, armor);
 				cir.setReturnValue(level);
 			}
 		}

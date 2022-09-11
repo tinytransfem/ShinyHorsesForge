@@ -1,10 +1,10 @@
 {
   "required": true,
+  "minVersion": "0.8",
   "package": "com.kuraion.shinyhorses.mixin",
-  "compatibilityLevel": "JAVA_8",
-  "refmap": "shinyhorses.refmap.json",
+  "compatibilityLevel": "JAVA_17",
+  "refmap": "shinyhorses.mixins.refmap.json",
   "mixins": [
-    "ItemMixin",
     "EnchantmentHelperMixin",
     "EnchantmentCategoryMixin",
     "ItemMixin"
@@ -14,6 +14,5 @@
   ],
   "injectors": {
     "defaultRequire": 1
-  },
-  "minVersion": "0.8"
+  }
 }
