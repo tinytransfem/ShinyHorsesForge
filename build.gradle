@@ -20,7 +20,7 @@ apply plugin: 'eclipse'
 apply plugin: 'maven-publish'
 apply plugin: 'pmd'
 
-version = '1.'
+version = '1.0'
 group = 'com.kuraion.shinyhorses'
 archivesBaseName = 'shinyhorses'
 
