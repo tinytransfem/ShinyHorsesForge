@@ -2,7 +2,7 @@
   "required": true,
   "package": "com.kuraion.shinyhorses.mixin",
   "compatibilityLevel": "JAVA_17",
-  "refmap": "shinyhorses.refmap.json",
+  "refmap": "shinyhorses.mixins.refmap.json",
   "mixins": [
     "EnchantmentHelperMixin",
     "EnchantmentCategoryMixin",
