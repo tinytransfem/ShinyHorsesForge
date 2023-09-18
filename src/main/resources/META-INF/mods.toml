@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[41,)"
+loaderVersion="[45,)"
 license="MIT"
 
 [[mods]]
@@ -15,7 +15,7 @@ description='''Enchant horse armor and gallop over the freezing ocean!'''
 [[dependencies.ante]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19,]"
+    versionRange="[1.19.4,]"
     ordering="NONE"
     side="BOTH"
 
