@@ -1,5 +1,5 @@
 modLoader="javafml"
-loaderVersion="[45,)"
+loaderVersion="[46,)"
 license="MIT"
 
 [[mods]]
@@ -8,14 +8,14 @@ version="1.2"
 displayName="Shiny Horses Forge - Enchantable Horse Armor"
 credits="Credit goes to tfarecnim for the original mod and Dragonostic for the Fabric version."
 displayURL="https://www.curseforge.com/minecraft/mc-mods/shiny-horses-forge-enchantable-horse-armor"
-authors="Kuraion"
+authors="tinytransfem"
 logoFile="logo.png"
 description='''Enchant horse armor and gallop over the freezing ocean!'''
 
 [[dependencies.ante]]
     modId="minecraft"
     mandatory=true
-    versionRange="[1.19.4,]"
+    versionRange="[1.20,]"
     ordering="NONE"
     side="BOTH"
 
