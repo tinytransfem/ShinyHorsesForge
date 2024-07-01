@@ -44,14 +44,9 @@ public class CommonClass {
         if (entityIn instanceof Horse) {
             ItemStack armor = ((Horse) entityIn).getBodyArmorItem();
             if (armor.getItem() instanceof AnimalArmorItem) {
-                int level = getEnchantmentLevel(armor, enchantmentIn);
+                int level = EnchantmentHelper.getItemEnchantmentLevel(enchantmentIn, armor);
                 cir.setReturnValue(level);
             }
         }
-    }
-
-    public static int getEnchantmentLevel(ItemStack itemStack, Enchantment enchantment) {
-        Map<Enchantment, Integer> enchantments = EnchantmentHelper.getEnchantments(itemStack);
-        return enchantments.getOrDefault(enchantment, 0);
     }
 }
