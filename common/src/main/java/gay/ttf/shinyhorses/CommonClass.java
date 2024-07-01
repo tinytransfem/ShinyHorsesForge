@@ -8,7 +8,7 @@ import net.minecraft.client.renderer.RenderType;
 import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.animal.horse.Horse;
-import net.minecraft.world.item.HorseArmorItem;
+import net.minecraft.world.item.AnimalArmorItem;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.enchantment.Enchantment;
 import net.minecraft.world.item.enchantment.EnchantmentHelper;
@@ -27,8 +27,8 @@ public class CommonClass {
 
     public static VertexConsumer renderHorseArmorGlintHook(VertexConsumer old, PoseStack matrixStackIn, MultiBufferSource bufferIn, int packedLightIn, Horse horse,
                                                            float limbSwing, float limbSwingAmount, float partialTicks, float ageInTicks, float netHeadYaw, float headPitch) {
-        ItemStack stack = horse.getArmor();
-        HorseArmorItem horseArmorItem = (HorseArmorItem) stack.getItem();
+        ItemStack stack = horse.getBodyArmorItem();
+        AnimalArmorItem horseArmorItem = (AnimalArmorItem) stack.getItem();
         boolean glint = horseArmorItem.isFoil(stack);
         if (glint) {
             ResourceLocation texture = horseArmorItem.getTexture();
@@ -42,8 +42,8 @@ public class CommonClass {
 
     public static void checkHorseHook(Enchantment enchantmentIn, LivingEntity entityIn, CallbackInfoReturnable<Integer> cir) {
         if (entityIn instanceof Horse) {
-            ItemStack armor = ((Horse) entityIn).getArmor();
-            if (armor.getItem() instanceof HorseArmorItem) {
+            ItemStack armor = ((Horse) entityIn).getBodyArmorItem();
+            if (armor.getItem() instanceof AnimalArmorItem) {
                 int level = getEnchantmentLevel(armor, enchantmentIn);
                 cir.setReturnValue(level);
             }
